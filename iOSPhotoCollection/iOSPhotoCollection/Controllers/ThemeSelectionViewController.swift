@@ -14,12 +14,14 @@ class ThemeSelectionViewController: UIViewController {
     
     @IBOutlet weak var selectThemeLabel: UILabel!
     
+    
     @IBAction func selectDarkTheme(_ sender: Any) {
+        themeHelper?.setThemePreferenceToDark()
+        dismiss(animated: true, completion: nil)
     }
     
     @IBAction func selectLightTheme(_ sender: Any) {
+        themeHelper?.setThemePreferenceToYourColorHere()
+        dismiss(animated: true, completion: nil)
     }
-    
-    
-   
 }
